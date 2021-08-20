@@ -1,0 +1,117 @@
+<main>
+    <h1>Top</h1>
+
+    <h2>画面を等分する</h2>
+    <div class="row mb-5">
+        <div class="col bg-primary">1</div>
+        <div class="col bg-danger">2</div>
+        <div class="col bg-success">3</div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-4 bg-primary">1</div>
+        <div class="col-1 bg-danger">2</div>
+        <div class="col-2 bg-success">3</div>
+        <div class="col-3 bg-primary">4</div>
+        <div class="col-2 bg-danger">5</div>
+    </div>
+
+    <div class="container mb-5">
+        <p>containerクラスを適応</p>
+        <div class="bg-primary">画面幅によって変化する</div>
+    </div>
+
+    <div class="row mb-5">
+        <p>768px以下だとブロック要素になる</p>
+        <p>769px以上だと横並び（flex）が適応される</p>
+        <div class="col-md bg-primary">md 1</div>
+        <div class="col-md bg-danger">md 2</div>
+        <div class="col-md bg-success">md 3</div>
+        <div class="col-md bg-primary">md 4</div>
+        <div class="col-md bg-danger">md 5</div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-4 bg-primary">1</div>
+        <div class="col-1 bg-danger">2</div>
+        <div class="col-2 bg-success">3</div>
+        <div class="col-3 bg-primary">4</div>
+        <!-- 12カラムを超えているのではみ出す -->
+        <div class="col-3 bg-danger">5（12カラムを超えているのではみ出す）</div>
+    </div>
+
+    <p>アラインを調整する</p>
+    <div class="row align-items-center mb-5">
+        <div class="col-sm-6 col-md bg-primary">1</div>
+        <div class="col-sm-6 col-md bg-danger">2</div>
+        <div class="col-sm-12 col-md bg-success">3</div>
+    </div>
+
+    <p>各要素ごとにアラインを調整する</p>
+    <div class="row align-items-center mb-5">
+        <div class="col-sm-6 col-md bg-primary align-self-start">1</div>
+        <div class="col-sm-6 col-md bg-danger align-self-center">2</div>
+        <div class="col-sm-12 col-md bg-success align-self-end">3</div>
+    </div>
+
+    <p>横方向のアライン</p>
+    <div class="row justify-content-between mb-5">
+        <div class="col-3 bg-primary">1</div>
+        <div class="col-3 bg-danger">2</div>
+        <div class="col-3 bg-success">3</div>
+    </div>
+
+    <p>順序入れ替え（768px以上のときのみ要素の順番が入れ替わっている）</p>
+    <div class="row mb-5">
+        <div class="col order-md-last bg-primary">1</div>
+        <div class="col order-md-1 bg-danger">2</div>
+        <div class="col order-md-2 bg-success">3</div>
+    </div>
+
+    <p>768px以上の時のみ要素の間に空白が入る（）</p>
+    <div class="row mb-5">
+        <div class="col col-md-4 bg-primary">1</div>
+        <div class="offset-md-2 bg-danger"></div>
+        <div class="col col-md-6 bg-success">3</div>
+    </div>
+
+    <p>グリッドを入れ子にした状態</p>
+    <div class="row mb-5">
+        <div class="col bg-primary">
+            <div class="row">
+                <div class="col-9 bg-warning">1-1</div>
+                <div class="col-3 bg-info">1-2</div>
+            </div>
+        </div>
+        <div class="col bg-danger">2</div>
+        <div class="col bg-success">3</div>
+    </div>
+
+    <p>ガーターを削除する</p>
+    <!-- <div class="row no-gutters"> -->
+    <div class="row g-0 mb-5">
+        <div class="col bg-primary">1</div>
+        <div class="col bg-danger">2</div>
+        <div class="col bg-success">3</div>
+    </div>
+
+    <div class="mb-5">
+        <a href="product.html">プロダクトへのリンク</a>
+    </div>
+
+    <div>
+        <a href="product_detail.html">プロダクト詳細ページへのリンク</a>
+    </div>
+
+    <style>
+        /* rowクラスをカスタマイズしてレイアウトや背景色を変更する */
+        .row {
+            height: 90px;
+            background-color: #ddd;
+        }
+
+        .row div {
+            height: 30px;
+        }
+    </style>
+</main>

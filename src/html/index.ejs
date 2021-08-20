@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<body class="">
+
+<%
+
+const top = 0;
+const blog = 1;
+const contact = 2;
+const product = 3;
+const product_detail = 4;
+
+_%> 
+
+<%- include('_include/_head') %> 
+
+<% if(flagData.id !== product_detail){ _%> 
+    <%- include('_include/_header') %>
+<% } _%>
+
+<% if(flagData.id === top){ _%> 
+    <%- include('_include/_top') _%>
+<% } _%>
+
+<% if(flagData.id === blog){ _%> 
+    <%- include('_include/_blog') _%>
+<% } _%>
+
+<% if(flagData.id === contact){ _%> 
+    <%- include('_include/_contact') _%>
+<% } _%>
+
+<% if(flagData.id === product){ _%> 
+    <%- include('_include/_product') _%>
+<% } _%>
+
+<% if(flagData.id === product_detail){ _%> 
+    <%- include('_include/_product_detail') _%>
+<% } _%>
+
+<%# トップページとプロダクトページではフッターを読み込まない %> 
+<% if(flagData.id !== product && flagData.id !== top && flagData.id !== product_detail){ _%> 
+    <%- include('_include/_footer') _%> 
+<% } _%>
+
+<script src="<%= json.top.js %>bundle.min.js"></script>
+</body>
+</html>

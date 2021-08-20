@@ -1,0 +1,20 @@
+{
+    "top": {
+        "id": "top",
+        "title": "タイトル",
+        "desc": "ディスクリプション",
+        "keywords": "キーワード",
+        "url": "サイトURL",
+        "css": "css/",
+        "js": "js/",
+        "img": "img/",
+        "top": "./"
+    },
+    "item": {
+        "index": "index",
+        "blog": "blog",
+        "contact": "contact",
+        "product": "product",
+        "product_detail": "product_detail"
+    }
+}
